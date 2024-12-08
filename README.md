@@ -1,3 +1,3 @@
-# Ethan Britton
+# Ethan Britton Website
 
-Built with flutter
+Built with flutter.
