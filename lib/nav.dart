@@ -19,23 +19,39 @@ class TabBarExample extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-            bottom: const TabBar(
-          isScrollable: true,
-          tabAlignment: TabAlignment.center,
-          labelPadding: EdgeInsets.symmetric(horizontal: 30.0),
-          tabs: <Widget>[
-            Tab(
-              text: "Home",
+            bottom: PreferredSize(
+          preferredSize: Size.fromHeight(0),
+          child: Row(children: [
+            Expanded(
+              child: Text(
+                "TEST",
+                style: TextStyle(color: Colors.transparent),
+              ),
             ),
-            Tab(
-              text: "About Me",
-            ),
-            Tab(
-              text: "Projects",
-            ),
-          ],
+            TabBar(
+              indicatorSize: TabBarIndicatorSize.tab,
+              dividerColor: Colors.transparent,
+              tabAlignment: TabAlignment.center,
+              isScrollable: true,
+              padding: EdgeInsets.only(right: 40),
+              labelPadding: EdgeInsets.only(right: 30, left: 30),
+              tabs: <Widget>[
+                Tab(
+                  text: "Home",
+                ),
+                Tab(
+                  text: "About Me",
+                ),
+                Tab(
+                  text: "Projects",
+                ),
+              ],
+            )
+          ]),
         )),
-        body: TabBarView(children: _tabs),
+        body: TabBarView(
+          children: _tabs,
+        ),
       ),
     );
   }
