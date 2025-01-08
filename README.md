@@ -1,4 +1,4 @@
 # Ethan Britton Website
 
-https://website-7f364.web.app/ <br/>
+https://ethan-britton.com/ <br/>
 Built with flutter.

@@ -2,21 +2,57 @@ import 'package:flutter/material.dart';
 import 'package:website/screens/about.dart';
 import 'package:website/screens/home.dart';
 import 'package:website/screens/projects.dart';
+import 'package:website/screens/resume.dart';
+import "package:universal_html/html.dart" as html;
 
-class TabBarExample extends StatelessWidget {
-  TabBarExample({super.key});
+class MyTabBar extends StatefulWidget {
+  const MyTabBar({super.key});
+  @override
+  _MyTabbedPageState createState() => _MyTabbedPageState();
+}
+
+class _MyTabbedPageState extends State<MyTabBar>
+    with SingleTickerProviderStateMixin {
+  List<bool> _isDisabled = [false, false, false, true];
 
   final List<Widget> _tabs = [
     HomePage(),
     AboutPage(),
     ProjectsPage(),
+    ResumePage(),
   ];
+  late TabController _tabController;
+
+  onTap() {
+    if (_isDisabled[_tabController.index]) {
+      html.window.open(
+          'https://drive.google.com/file/d/1RLb7hwPYYZhnpOgP_MYuaheu34BwYHSC/view?usp=sharing',
+          'Resume');
+      int index = _tabController.previousIndex;
+      setState(() {
+        _tabController.index = index;
+      });
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(vsync: this, length: _tabs.length);
+    _tabController.addListener(onTap);
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       initialIndex: 0,
-      length: 3,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
             bottom: PreferredSize(
@@ -29,6 +65,7 @@ class TabBarExample extends StatelessWidget {
               ),
             ),
             TabBar(
+              controller: _tabController,
               indicatorSize: TabBarIndicatorSize.tab,
               dividerColor: Colors.transparent,
               tabAlignment: TabAlignment.center,
@@ -45,11 +82,15 @@ class TabBarExample extends StatelessWidget {
                 Tab(
                   text: "Projects",
                 ),
+                Tab(
+                  text: "Resume",
+                ),
               ],
             )
           ]),
         )),
         body: TabBarView(
+          controller: _tabController,
           children: _tabs,
         ),
       ),

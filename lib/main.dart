@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: true),
       title: 'Ethan Britton',
-      home: TabBarExample(),
+      home: MyTabBar(),
     );
   }
 }
