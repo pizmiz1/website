@@ -15,11 +15,22 @@
   font-size: 1.3rem;
   font-weight: 600;
   color: #fff;
-  transition: 0.2s ease-in-out;
 }
 #navbar li a:hover,
 #navbar li a.active {
   color: #17cf97;
+  transition: 0.2s ease-out;
+}
+
+#navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  width: 0;
+  height: 2px;
+  background-color: #17cf97;
+  transition: 0.2s ease-out;
 }
 
 #navbar li a:hover::after,
@@ -31,4 +42,5 @@
   position: absolute;
   bottom: -4px;
   left: 20px;
+  transition: 0.2s ease-out;
 }
