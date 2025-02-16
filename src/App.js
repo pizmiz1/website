@@ -7,8 +7,9 @@ const App = () => {
   return (
     <div
       style={{
-        background: "linear-gradient(90deg, #effaff 0%, #d9e7ff 100%)",
+        background: "#212121",
         height: "100vh",
+        overflowY: "auto",
         width: "100%",
         display: "flex",
         flexDirection: "column",
@@ -18,11 +19,28 @@ const App = () => {
       <div
         style={{
           display: "flex",
-          flexGrow: 1,
+          flex: 1,
           flexDirection: "column",
+          padding: "15px",
         }}
       >
         <Outlet />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "flex-end",
+            justifyContent: "flex-end",
+            flex: 1,
+          }}
+        >
+          <p
+            style={{
+              paddingRight: "20px",
+            }}
+          >
+            Created by Ethan Britton
+          </p>
+        </div>
       </div>
     </div>
   );

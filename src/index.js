@@ -5,9 +5,8 @@ import "./styles.css";
 import App from "./App";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import HomeScreen from "./screens/Home";
-import ProjectsScreen from "./screens/Projects";
-import ResumeScreen from "./screens/Resume";
+import HomeScreen from "./screens/Home/Home";
+import ProjectsScreen from "./screens/Projects/Projects";
 
 const router = createBrowserRouter([
   {
@@ -21,10 +20,6 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <ProjectsScreen />,
-      },
-      {
-        path: "/resume",
-        element: <ResumeScreen />,
       },
     ],
   },
