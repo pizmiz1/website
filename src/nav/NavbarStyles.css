@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0px;
 }
 
 #navbar li {
@@ -84,4 +86,23 @@
   bottom: -4px;
   left: 20px;
   transition: 0.2s ease-out;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #191919;
+  -webkit-box-shadow: 0 5px 30px rgb(0, 0, 0);
+  box-shadow: 0 5px 30px rgb(0, 0, 0);
+  margin-bottom: 30px;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+}
+
+/* Large Screen */
+@media (min-width: 851px) {
+  .nav-container {
+    padding: 10px 80px;
+  }
 }

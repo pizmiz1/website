@@ -11,17 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-end",
-          background: "#191919",
-          padding: "10px 80px",
-          WebkitBoxShadow: "0 5px 30px rgb(0,0,0)",
-          marginBottom: "30px",
-        }}
-      >
+      <nav className="nav-container">
         <ul id="navbar">
           <li>
             <NavLink style={{ fontFamily: "Inter" }} to="/">

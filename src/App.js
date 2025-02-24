@@ -21,7 +21,6 @@ const App = () => {
           display: "flex",
           flex: 1,
           flexDirection: "column",
-          padding: "15px",
         }}
       >
         <Outlet />
@@ -30,12 +29,13 @@ const App = () => {
             display: "flex",
             alignItems: "flex-end",
             justifyContent: "flex-end",
-            flex: 1,
+            backgroundColor: "#17cf97",
           }}
         >
           <p
             style={{
               paddingRight: "20px",
+              color: "white",
             }}
           >
             Created by Ethan Britton
