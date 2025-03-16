@@ -14,12 +14,16 @@ const Navbar = () => {
       <nav className="nav-container">
         <ul id="navbar">
           <li>
-            <NavLink style={{ fontFamily: "Inter" }} to="/">
+            <NavLink style={{ fontFamily: "Inter" }} to="/" viewTransition>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink style={{ fontFamily: "Inter" }} to="/projects">
+            <NavLink
+              style={{ fontFamily: "Inter" }}
+              to="/projects"
+              viewTransition
+            >
               Projects
             </NavLink>
           </li>
