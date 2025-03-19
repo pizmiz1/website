@@ -28,6 +28,16 @@ const ProjectsScreen = () => {
             isActive={currentHover === 1}
             noneActive={currentHover === 0}
             headerText={"Linedo"}
+            imageName={"linedo.png"}
+            chipTexts={[
+              { text: "Javascript", type: "default" },
+              { text: "React Native", type: "default" },
+              { text: "Node", type: "default" },
+              { text: "Express", type: "default" },
+              { text: "MongoDB", type: "storage" },
+              { text: "Heroku", type: "hosting" },
+              { text: "Expo", type: "hosting" },
+            ]}
           />
         </div>
         <div
@@ -41,6 +51,33 @@ const ProjectsScreen = () => {
             isActive={currentHover === 2}
             noneActive={currentHover === 0}
             headerText={"MainPoint"}
+            imageName={"mainPoint.png"}
+            chipTexts={[
+              { text: "Javascript", type: "default" },
+              { text: "React Native", type: "default" },
+              { text: "Async Storage", type: "storage" },
+              { text: "Firebase", type: "hosting" },
+              { text: "Expo", type: "hosting" },
+            ]}
+          />
+        </div>
+        <div
+          className="project-card-container"
+          onMouseEnter={() => {
+            setCurrentHover(3);
+          }}
+          onMouseLeave={noneHovered}
+        >
+          <ProjectCardComponent
+            isActive={currentHover === 3}
+            noneActive={currentHover === 0}
+            headerText={"Portfolio"}
+            imageName={"favicon.png"}
+            chipTexts={[
+              { text: "Javascript", type: "default" },
+              { text: "React", type: "default" },
+              { text: "Firebase", type: "hosting" },
+            ]}
           />
         </div>
       </div>

@@ -1,0 +1,19 @@
+.chip-text {
+  font-weight: bold;
+}
+
+/* Small Screen */
+@media (max-width: 850px) {
+  .chip-text {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 851px) {
+  .chip-text {
+    padding: 7px;
+    font-size: 0.9rem;
+  }
+}
