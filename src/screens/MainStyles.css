@@ -1,0 +1,19 @@
+.upper-container {
+  display: flex;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Small Screen */
+@media (max-width: 850px) {
+  .upper-container {
+    flex-direction: column;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 851px) {
+  .upper-container {
+    flex-direction: row;
+  }
+}

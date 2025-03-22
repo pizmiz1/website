@@ -19,46 +19,31 @@
   cursor: url("./../../assets/football.png"), auto;
 }
 
-.upper-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 15px;
-}
-
-.left-half {
-  flex: 0.5;
-  display: flex;
-  flex-direction: column;
-}
-
-.right-half-subtext {
+.about-half-subtext {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
+.project-card-container {
+  display: flex;
+}
+
 /* Small Screen */
 @media (max-width: 850px) {
-  .upper-container {
-    flex-direction: column;
-  }
-  .left-half {
-    align-items: flex-start;
-    flex: 0.5;
-    margin-bottom: 10vw;
+  .project-card-container {
+    margin-bottom: 15px;
   }
 }
 
 /* Large Screen */
 @media (min-width: 851px) {
-  .upper-container {
-    flex-direction: row;
-  }
-  .left-half {
-    align-items: flex-end;
-    flex: 0.5;
-  }
-  .right-half-subtext {
+  .about-half-subtext {
     max-width: 600px;
+    margin-left: 20px;
+  }
+  .project-card-container {
+    height: 220px;
+    margin-bottom: 30px;
   }
 }

@@ -29,6 +29,7 @@ const Chip = ({ text, type }) => {
         alignItems: "center",
         display: "flex",
         borderRadius: "50px",
+        height: "fit-content",
       }}
     >
       <p style={{ color: color }} className="chip-text">

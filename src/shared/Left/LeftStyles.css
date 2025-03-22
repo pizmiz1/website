@@ -1,0 +1,22 @@
+.left-half {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Small Screen */
+@media (max-width: 850px) {
+  .left-half {
+    align-items: flex-start;
+    flex: 0.5;
+    margin-bottom: 10vw;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 851px) {
+  .left-half {
+    align-items: flex-end;
+    flex: 0.5;
+  }
+}

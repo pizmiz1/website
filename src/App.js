@@ -1,6 +1,4 @@
-import Navbar from "./nav/Navbar";
-import { Outlet } from "react-router-dom";
-
+import MainScreen from "./screens/Main";
 import "./styles.css";
 
 const App = () => {
@@ -15,7 +13,6 @@ const App = () => {
         flexDirection: "column",
       }}
     >
-      <Navbar />
       <div
         style={{
           display: "flex",
@@ -23,7 +20,7 @@ const App = () => {
           flexDirection: "column",
         }}
       >
-        <Outlet />
+        <MainScreen />
       </div>
     </div>
   );

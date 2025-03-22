@@ -1,0 +1,41 @@
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#navbar button {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  transition: 0.2s ease-in-out;
+  font-family: "Inter";
+  cursor: pointer;
+  padding: 0px;
+}
+
+#navbar button:hover,
+#navbar button.active {
+  color: #17cf97;
+  transition: 0.2s ease-out;
+}
+
+.separator {
+  padding: 0px 12px;
+}
+
+/* Small Screen */
+@media (max-width: 850px) {
+}
+
+/* Large Screen */
+@media (min-width: 851px) {
+  #navbar {
+    margin-left: 20px;
+  }
+}
