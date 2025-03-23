@@ -26,8 +26,12 @@ const Right = () => {
         }}
       />
 
-      {activeTab === 0 ? (
-        <div className="about-half-subtext">
+      <div className="content-container">
+        <div
+          className={`about-half-subtext ${
+            activeTab === 0 ? "active" : "inactive2"
+          }`}
+        >
           <p style={{ fontSize: "20px", marginTop: "15px" }}>
             I'm a developer who has a passion for creating applications that
             blend functionality and user experience. Ever since I was a child,
@@ -66,12 +70,19 @@ const Right = () => {
             of my favorites.
           </p>
         </div>
-      ) : (
+
         <div
+          className={activeTab === 1 ? "active" : "inactive"}
           style={{
             display: "flex",
             flexDirection: "column",
             marginTop: "15px",
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            transition: "transform 0.3s ease-in-out",
+            boxSizing: "border-box",
+            justifyContent: "flex-start",
           }}
         >
           <div
@@ -138,7 +149,7 @@ const Right = () => {
             />
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
