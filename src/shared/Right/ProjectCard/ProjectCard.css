@@ -5,7 +5,6 @@
   border-radius: 20px;
   transition: 0.1s ease-in-out;
   padding: 20px;
-  cursor: pointer;
   justify-content: space-between;
 }
 
@@ -28,6 +27,17 @@
   gap: 8px;
   flex-wrap: wrap;
   flex: 0.7;
+}
+
+.icon2 {
+  opacity: 0.6;
+  transition: 0.15s ease-in-out;
+}
+
+.icon2:hover,
+.icon2:active {
+  opacity: 1;
+  transition: 0.15s ease-in-out;
 }
 
 /* Small Screen */

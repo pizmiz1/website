@@ -4,12 +4,34 @@
   flex-direction: column;
 }
 
+.inner-container {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon,
+.icon:visited,
+.icon:link {
+  opacity: 0.6;
+  transition: 0.15s ease-in-out;
+}
+
+.icon:hover,
+.icon:active {
+  opacity: 1;
+  transition: 0.15s ease-in-out;
+}
+
 /* Small Screen */
 @media (max-width: 850px) {
   .left-half {
     align-items: flex-start;
     flex: 0.5;
     margin-bottom: 20px;
+  }
+  .inner-container {
+    align-items: flex-start;
   }
 }
 
@@ -18,5 +40,8 @@
   .left-half {
     align-items: flex-end;
     flex: 0.5;
+  }
+  .inner-container {
+    align-items: flex-end;
   }
 }

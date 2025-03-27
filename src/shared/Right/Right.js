@@ -96,6 +96,9 @@ const Right = () => {
               isActive={currentHover === 1}
               noneActive={currentHover === 0}
               headerText={"Linedo"}
+              description={
+                "Cross platform mobile application that provides wait times for Cincinnati local restaurants and bars. (Code upon request)"
+              }
               imageName={"linedo.png"}
               chipTexts={[
                 { text: "Javascript", type: "default" },
@@ -119,6 +122,9 @@ const Right = () => {
               isActive={currentHover === 2}
               noneActive={currentHover === 0}
               headerText={"MainPoint"}
+              description={
+                "Cross platform health and fitness mobile application for managing your grocery list, meal building, macro tracking, workout planning and many more."
+              }
               imageName={"mainPoint.png"}
               chipTexts={[
                 { text: "Javascript", type: "default" },
@@ -140,6 +146,7 @@ const Right = () => {
               isActive={currentHover === 3}
               noneActive={currentHover === 0}
               headerText={"Portfolio"}
+              description={"Web portfolio for Ethan Britton (hey that's me)."}
               imageName={"favicon.png"}
               chipTexts={[
                 { text: "Javascript", type: "default" },
