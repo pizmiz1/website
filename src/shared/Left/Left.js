@@ -99,7 +99,7 @@ const Left = () => {
                 <LuMail size={30} />
               </a>
               <a
-                href="https://drive.google.com/file/d/1RLb7hwPYYZhnpOgP_MYuaheu34BwYHSC/view?usp=sharing"
+                href="https://drive.google.com/file/d/1pRvUQ45q1uS427x0rUCGuRrpCYfAxuB-/view?usp=sharing"
                 target="_blank"
                 className="icon"
               >
