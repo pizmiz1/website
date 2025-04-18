@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { LuMail } from "react-icons/lu";
+import { FaWpforms } from "react-icons/fa";
 import "./LeftStyles.css";
 
 const Left = () => {
@@ -35,10 +36,10 @@ const Left = () => {
             }}
           >
             <img
-              style={{ borderRadius: 1000 }}
+              style={{ borderRadius: 2000, aspectRatio: 1 }}
               src={require(`./../../assets/headshot.jpg`)}
               height={screenWidth < 850 ? 200 : 250}
-              width={screenWidth < 850 ? 180 : 230}
+              width={screenWidth < 850 ? 200 : 250}
             />
             <p
               style={{
@@ -96,6 +97,13 @@ const Left = () => {
                 className="icon"
               >
                 <LuMail size={30} />
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1t1CSZOVXkmSd6b1m7vHyccy6jzxJUpLx/view?usp=sharing"
+                target="_blank"
+                className="icon"
+              >
+                <FaWpforms size={30} />
               </a>
             </div>
           </div>
