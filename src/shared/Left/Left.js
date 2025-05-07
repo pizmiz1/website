@@ -35,12 +35,7 @@ const Left = () => {
               marginRight: "10vw",
             }}
           >
-            <img
-              style={{ borderRadius: 2000, aspectRatio: 1 }}
-              src={require(`./../../assets/headshot.jpg`)}
-              height={screenWidth < 850 ? 200 : 250}
-              width={screenWidth < 850 ? 200 : 250}
-            />
+            <img style={{ borderRadius: 2000, aspectRatio: 1 }} src={require(`./../../assets/headshot.jpg`)} height={screenWidth < 850 ? 200 : 250} width={screenWidth < 850 ? 200 : 250} />
             <p
               style={{
                 marginTop: "10px",
@@ -63,11 +58,7 @@ const Left = () => {
             >
               Software Engineer
             </p>
-            <p
-              style={{ fontSize: "20px", marginTop: "15px", marginLeft: "2px" }}
-            >
-              Designing and building software is my playground.
-            </p>
+            <p style={{ fontSize: "20px", marginTop: "15px", marginLeft: "2px" }}>Designing and building software is my playground.</p>
             <div
               style={{
                 display: "flex",
@@ -77,32 +68,16 @@ const Left = () => {
                 marginTop: "15px",
               }}
             >
-              <a
-                href="https://github.com/pizmiz1"
-                target="_blank"
-                className="icon"
-              >
+              <a href="https://github.com/pizmiz1" target="_blank" className="icon">
                 <FaGithub size={30} />
               </a>
-              <a
-                href="https://www.linkedin.com/in/ethan-britton-164657160/"
-                target="_blank"
-                className="icon"
-              >
+              <a href="https://www.linkedin.com/in/ethan-britton-164657160/" target="_blank" className="icon">
                 <FaLinkedin size={30} />
               </a>
-              <a
-                href="mailto:ebritton12321@gmail.com"
-                target="_blank"
-                className="icon"
-              >
+              <a href="mailto:ebritton12321@gmail.com" target="_blank" className="icon">
                 <LuMail size={30} />
               </a>
-              <a
-                href="https://drive.google.com/file/d/1pRvUQ45q1uS427x0rUCGuRrpCYfAxuB-/view?usp=sharing"
-                target="_blank"
-                className="icon"
-              >
+              <a href="https://drive.google.com/file/d/1S3w-SD0h67w6692Lv6oDyqDMRHcpixYo/view?usp=sharing" target="_blank" className="icon">
                 <FaWpforms size={30} />
               </a>
             </div>
