@@ -1,4 +1,8 @@
 # Ethan Britton Website
 
-https://ethan-britton.com/ <br/>
+Old version of website
 Built with react.
+
+# [New Version](https://github.com/pizmiz1/website_v2)
+
+https://ethan-britton.com/
